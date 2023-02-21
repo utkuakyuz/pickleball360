@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>pickleball360</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header class="d-none-l">
+  <nav>
+   <img src="assets/360.svg" alt="">
+   <select name="courts" id="courts">
+    <option value="">Select Court</option>
+    <option value="">Custom Style available with JS</option>
+    <option value="">Utku Akyuz</option>
+   </select>
+   <img src="assets/user.svg" alt="">
+  </nav>
+ </header>
+ <main>
+  <img class="compass-fix collapse-l" src="assets/compass.svg" alt="compass">
+  <section class="table-container">
+   <div class="table-header flex v-center">
+    <h2>Waiting List</h2>
+    <div class="icon-holder collapse-m">
+     <img src="assets/question.svg" alt="">
+     <img src="assets/restart.svg" alt="">
+    </div>
+   </div>
+   <div class="table-holder">
+    <table id="competitions">
+     <tr>
+      <th class="collapse-s">Game<br>Type</th>
+      <th class="collapse-l">Game<br>Rating</th>
+      <th class="align-left">Players</th>
+      <th></th>
+      <th class="align-center">Waiting Time</th>
+     </tr>
+     <tr>
+      <td class="type-cell collapse-s"><img src="assets/competitionType.svg" alt=""></td>
+      <td class="score-cell collapse-l">3.5</td>
+      <td>Germany<br>Germany</td>
+      <td>Robert Junior<br>Thomas Dawner</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr>
+      <td class="type-cell collapse-s"><img src="assets/competitionType.svg" alt=""></td>
+      <td class="score-cell collapse-l">3.5</td>
+      <td>Robert Junior<br>Thomas Dawner</td>
+      <td>Robert Junior<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr>
+      <td class="type-cell collapse-s"><img src="assets/competitionType.svg" alt=""></td>
+      <td class="score-cell collapse-l"><img src="assets/handsIcon.svg" alt=""></td>
+      <td>Robert Junior<br>Thomas Dawner</td>
+      <td>Robert Junior<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr>
+      <td class="type-cell collapse-s"><img src="assets/competitionType.svg" alt=""></td>
+      <td class="score-cell collapse-l"><img src="assets/handsIcon.svg" alt=""></td>
+      <td>Germany<br>Thomas Dawner</td>
+      <td>B.A. Baracus<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr class="collapse-l">
+      <td class="type-cell collapse-s"><img src="assets/competitionType2.svg" alt=""></td>
+      <td class="score-cell collapse-l"><img src="assets/handsIcon.svg" alt=""></td>
+      <td>B.A. Baracus<br>Thomas Dawner</td>
+      <td>B.A. Baracus<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr class="collapse-l">
+      <td class="type-cell collapse-s"><img src="assets/competitionType2.svg" alt=""></td>
+      <td class="score-cell collapse-l">3.5</td>
+      <td>B.A. Baracus<br>Thomas Dawner</td>
+      <td>B.A. Baracus<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr class="collapse-l">
+      <td class="type-cell collapse-s"><img src="assets/competitionType.svg" alt=""></td>
+      <td class="score-cell collapse-l">3.5</td>
+      <td>Angus McGregor<br>Thomas Dawner</td>
+      <td>Angus McGregor<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+     <tr class="collapse-l">
+      <td class="type-cell collapse-s"><img src="assets/competitionType.svg" alt=""></td>
+      <td class="score-cell collapse-l">3.5</td>
+      <td>Angus McGregor<br>Thomas Dawner</td>
+      <td>Angus McGregor<br>Thomas Dawner3</td>
+      <td class="time-cell"> <b>19</b> mins <img class="d-none-l" src="assets/delete.svg" alt=""></td>
+     </tr>
+    </table>
+    <div class="show-more d-none-l"><span>Show other info</span> <img src="assets/arrowDown.svg" alt=""></div>
+   </div>
+  </section>
+  <section class="info-container">
+   <div class="card-holder collapse-l">
+    <div class="card-header v-center">
+     <h2>Announcements</h2>
+    </div>
+
+    <div id="card">
+     <h2 class="alignCenter">Court opening hours will change!</h2>
+     <div class="details">
+      <div>11.Dec.22</div>
+      <div>11.20 pm</div>
+     </div>
+     <div class="cardContent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae quia labore nisi sequi quasi
+      iste, velit
+      sed inventore beatae, sint numquam modi totam autem, nulla accusantium temporibus consectetur!
+      Soluta.
+      Repellendus consequuntur amet harum
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sit sunt voluptatum. Voluptates consectetur vel
+      temporibus ullam nobis modi illum inventore repellat maiores, ad dolores nostrum similique quidem cum
+      perspiciatis.
+     </div>
+    </div>
+   </div>
+   <div class="court-holder d-none-l">
+    <img src="assets/court.svg" alt="">
+    <img src="assets/court.svg" alt="">
+    <img src="assets/court.svg" alt="">
+    <img src="assets/court.svg" alt="">
+    <img src="assets/court.svg" alt="">
+    <img src="assets/court.svg" alt="">
+    <img class="court-empty" src="assets/courtEmpty.svg" alt="">
+    <img src="assets/courtEmpty.svg" alt="">
+    <img class="compass" src="assets/compass.svg" alt="">
+   </div>
+
+   <h2 class="court-cards-header alignCenter collapse-l">Courts</h2>
+   <div class="court-card-holder collapse-l">
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+    <div class="court-card">
+     <div class="court-outline">
+      <p>Roderic D.</p>
+      <p>Devon M.</p>
+      <p class="court-time-left">12 min.</p>
+      <br>
+      <p>Rick W.</p>
+      <p>Dori D.</p>
+     </div>
+    </div>
+   </div>
+
+   <div class="button-holder">
+    <button class="d-none-l">Add me</button>
+    <button class="collapse-l">Add to the waiting list</button>
+   </div>
+  </section>
+ </main>
+</body>
+
+</html>

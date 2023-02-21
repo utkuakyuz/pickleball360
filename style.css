@@ -1,0 +1,410 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--primary: #B74534;
+	--secondary: #C95D4D;
+	--dark: #222222;
+	--lgray: #393939;
+	--lpurple: #FFDCD1;
+	--xlgray: #E4E4E4;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--dark);
+}
+/* Base style (Not used frequently but several classes might be added for further work) */
+.align-center {
+	text-align: center !important;
+}
+
+.align-left {
+	text-align: left !important;
+}
+
+.h-center {
+	justify-content: center;
+}
+
+.v-center {
+	align-items: center;
+}
+/* Header */
+nav {
+	height: 63px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+nav>img {
+	height: 49px;
+}
+
+nav>select {
+	width: 50%;
+	border: 0;
+	border-radius: 4px;
+	padding: 6px 0 6px 6px;
+}
+
+nav>select:focus-visible {
+	border: 0;
+	outline: 0;
+}
+/* main */
+main {
+	padding: 2em;
+	padding-top: 0.5em;
+}
+/* table */
+.table-header {
+	display: flex;
+	align-items: center;
+	margin: 0.8em;
+	margin-top: 0;
+}
+
+.table-header>h2 {
+	font-size: 18px;
+}
+
+.icon-holder {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+	margin-left: 3rem;
+}
+
+.table-holder {
+	position: relative;
+}
+
+#competitions {
+	overflow: hidden;
+	border: 2px solid var(--primary);
+	padding-bottom: 10px;
+	border-spacing: 0;
+	border-radius: 15px;
+	width: 100%;
+	position: relative;
+}
+
+#competitions tr {
+	height: 40px;
+	color: #414141;
+}
+
+#competitions tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#competitions tr:hover {
+	background-color: #ddd;
+	border-radius: 15px;
+}
+
+#competitions th {
+	border-radius: 15px;
+	padding: 0 15px 0 15px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #fff;
+	color: var(--dark);
+}
+
+#competitions td {
+	border-top: 1px solid var(--xlgray);
+	font-size: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height: 22px;
+}
+
+#competitions td img {
+	vertical-align: middle;
+}
+
+#competitions .timeCell {
+	font-size: 16px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.timeCell>img {
+	vertical-align: middle;
+}
+
+.show-more {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+.show-more>img {
+	line-height: 16px;
+	color: var(--primary);
+	background-color: white;
+}
+
+.show-more>span {
+	line-height: 16px;
+	background-color: white;
+	color: var(--primary);
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.court-holder {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 3em;
+	margin-top: 3em;
+	background-color: #F8F8F8;
+	border-radius: 15px;
+}
+
+.court-empty {
+	border-radius: 8px;
+}
+
+.compass {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.compass-fix {
+	position: fixed;
+	top: 21px;
+	right: 30px;
+}
+
+.button-holder {
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+.button-holder>button {
+	width: 100%;
+	padding: 1em;
+	padding: 10px 20px 10px 20px;
+	border: 0;
+	border-radius: 4px;
+	background-color: var(--primary);
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.score-cell {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+}
+
+.time-cell {
+	text-align: center;
+}
+
+.type-cell {
+	text-align: center;
+}
+
+.card-header {
+	display: flex;
+	margin: 0.8em;
+	margin-top: 0;
+}
+
+.card-header>h2 {
+	font-size: 24px;
+}
+
+#card {
+	font-size: 18px;
+	border: 2px solid var(--primary);
+	border-radius: 15px;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+#card h2 {
+	font-weight: 700;
+}
+
+#card .details {
+	color: var(--lgray);
+	padding: 0 45px 0 45px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#card .cardContent {
+	color: #000000;
+	background-color: var(--lpurple);
+	padding: 25px 45px 25px 45px;
+	line-height: 22px;
+}
+
+.court-card-holder {
+	display: grid;
+	grid-template-columns: repeat(4, 110px);
+	grid-column-gap: 55px;
+	grid-row-gap: 55px;
+	padding: 3em;
+	padding-top: 1em;
+	justify-content: center;
+}
+
+.court-card {
+	position: relative;
+	height: 185px;
+	width: 95px;
+	border-radius: 8px;
+	background: #f3f3f3;
+	box-shadow: 0px 0px 7px 0px rgba(242, 0, 0, 1);
+	/* box-shadow: 0px -2px 15px 8px rgba(183, 69, 52, 1); */
+	padding: 7px;
+
+}
+
+.court-outline {
+	padding: 3px;
+	border: 6px solid var(--dark);
+	border-radius: 5px;
+}
+
+.court-outline>p {
+	color: var(--lgray);
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.court-outline>.court-time-left {
+	position: absolute;
+	background-color: var(--primary);
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 4px;
+	left: 3.5px;
+	right: 3.5px;
+	top: 85px;
+	margin: 0 auto;
+	padding: 5px 15px 4px 15px;
+}
+
+@media screen and (max-width: 620px) {
+	.collapse-s {
+		display: none;
+	}
+
+	#competitions td.time-cell {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.collapse-m {
+		display: none;
+	}
+
+	.table-header>h2 {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.table-header {
+		justify-content: center;
+	}
+
+	.card-header {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.collapse-l {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	.d-none-l {
+		display: none;
+	}
+
+	main {
+		display: flex;
+		gap: 100px;
+	}
+
+	.table-container {
+		width: 48%;
+	}
+
+	.info-container {
+		width: 40%;
+	}
+
+	.info-container h2 {
+		text-align: center;
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.court-cards-header {
+		font-weight: 500;
+	}
+
+	#competitions td {
+		height: 100px;
+		font-size: 18px;
+		line-height: 45px;
+	}
+
+	#competitions th {
+		font-size: 20px;
+		padding: 1em;
+	}
+
+	#competitions .score-cell {
+		font-size: 24px;
+	}
+
+	#competitions .time-cell {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.button-holder {
+		height: 80px;
+	}
+
+	.button-holder button {
+		font-size: 24px;
+		font-weight: 600;
+	}
+}
